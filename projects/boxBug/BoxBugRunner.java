@@ -30,7 +30,7 @@ public class BoxBugRunner
     public static void main(String[] args)
     {
         ActorWorld world = new ActorWorld();
-        Bug bob = new FaceBug();
+        Bug bob = new DancingBug(1000);
         bob.setColor(Color.ORANGE);
         world.add(new Location(0, 0), bob);
         world.show();
